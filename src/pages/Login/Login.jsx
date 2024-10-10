@@ -32,7 +32,10 @@ const Login = () => {
         })
         .catch(err => {
              console.log(err);
-             alert('Failed to login');
+             Swal.fire({
+                title: "Please Correct email and Password!",
+                icon: "warning"
+              });
         })
     }
 
